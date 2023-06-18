@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>GALLERY</title>
+  </head>
+  <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    .gallery img {
+      width: 400px;
+      height: 300px;
+      border: 2px solid red;
+      border-radius: 13px;
+      box-shadow: 4px 7px 7px 0px black;
+      cursor: pointer;
+      margin: 10px;
+      transition: 400ms;
+      object-fit: cover;
+    }
+    .gallery img:hover {
+      filter: grayscale(1);
+      transform: scale(1.03);
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="container"></div>
+    <div class="gallery">
+      <img src="imagesrespond/4e9a9960.JPG" alt="" />
+      <img src="imagesrespond/4e9a9974.JPG" alt="" />
+      <img src="imagesrespond/4e9a0006.JPG" alt="" />
+      <img src="imagesrespond/4e9a0013.JPG" alt="" />
+      <img src="imagesrespond/4e9a0082.JPG" alt="" />
+      <img src="imagesrespond/4e9a9703.JPG" alt="" />
+      <img src="imagesrespond/4e9a9960.JPG" alt="" />
+      <img src="imagesrespond/4e9a9974.JPG" alt="" />
+    </div>
+  </body>
+</html>
